@@ -4,41 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https: http:; frame-src 'self' https://www.google.com https://www.google.com.br/maps/embed/;">
+    <!-- CSP CORRIGIDA: Libera scripts de análise, fontes e a incorporação segura do Google Maps em HTTPS -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https: http:; frame-src 'self' https://www.google.com https://maps.google.com;">
 
     <link rel="icon" href="data:,">
     
+    <!-- Tag Canonical Obrigatória (Previne rastreamento duplicado - Pilar 4) -->
     <link rel="canonical" href="https://www.casaecabanaangillym.com.br/" />
 
-    <meta name="description" content="Casa & Cabana Angillyn: Hospedagem autêntica e aconchegante em Pomerode, SC. Ideal para turismo familiar, com jardins, churrasqueira, ar-condicionado e imersão na cultura germânica local.">
-    <meta name="keywords" content="Casa & Cabana Angillyn, Hospedagem em Pomerode, Aluguel de Temporada Pomerode SC, Airbnb Pomerode, Cabana na natureza Santa Catarina, Turismo Vale Europeu">
+    <!-- Meta Tags Semânticas Expandidas para E-E-A-T e Intenção -->
+    <meta name="description" content="Casa &amp; Cabana Angillyn: Hospedagem autêntica e aconchegante em Pomerode, SC. Ideal para turismo familiar, com jardins, churrasqueira, ar-condicionado e imersão na cultura germânica local.">
+    <meta name="keywords" content="Casa &amp; Cabana Angillyn, Hospedagem em Pomerode, Aluguel de Temporada Pomerode SC, Airbnb Pomerode, Cabana na natureza Santa Catarina, Turismo Vale Europeu">
     <meta name="author" content="Andréia Rejane Mantau">
     
+    <!-- Open Graph SEO para Redes Sociais -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.casaecabanaangillym.com.br/">
-    <meta property="og:title" content="Casa & Cabana Angillyn | Hospedagem Aconchegante em Pomerode">
+    <meta property="og:title" content="Casa &amp; Cabana Angillyn | Hospedagem Aconchegante em Pomerode">
     <meta property="og:description" content="Ambiente amplo e tranquilo, cercado de natureza. Perfeito para relaxar com a família e viver o autêntico turismo em Pomerode, SC.">
-    <meta property="og:image" content="https://www.casaecabanaangillym.com.br/CASA%20%26%20CABANA%20ANGILLYN%20TRANSPARENTE.png">
+    <meta property="og:image" content="https://www.casaecabanaangillym.com.br/CASA &amp; CABANA ANGILLYN TRANSPARENTE.png">
 
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.casaecabanaangillym.com.br/">
-    <meta property="twitter:title" content="Casa & Cabana Angillyn | Turismo e Hospedagem em Pomerode">
+    <meta property="twitter:title" content="Casa &amp; Cabana Angillyn | Turismo e Hospedagem em Pomerode">
     <meta property="twitter:description" content="Hospedagem imersiva na natureza com estrutura completa para famílias no coração do turismo germânico.">
-    <meta property="twitter:image" content="https://www.casaecabanaangillym.com.br/CASA%20%26%20CABANA%20ANGILLYN%20TRANSPARENTE.png">
+    <meta property="twitter:image" content="https://www.casaecabanaangillym.com.br/CASA &amp; CABANA ANGILLYN TRANSPARENTE.png">
 
-    <title>Casa & Cabana Angillyn - Hospedagem e Aluguel de Temporada em Pomerode, SC</title>
+    <title>Casa &amp; Cabana Angillyn - Hospedagem e Aluguel de Temporada em Pomerode, SC</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
+    <!-- Schema.org Multiplo: LodgingBusiness + FAQPage para AI Overviews (Pilar 1 e 2) -->
     <script type="application/ld+json">
     [
       {
         "@context": "https://schema.org",
         "@type": "LodgingBusiness",
         "name": "Casa & Cabana Angillyn",
-        "image": "https://www.casaecabanaangillym.com.br/CASA%20%26%20CABANA%20ANGILLYN%20TRANSPARENTE.png",
+        "image": "https://www.casaecabanaangillym.com.br/CASA & CABANA ANGILLYN TRANSPARENTE.png",
         "description": "Refúgio autêntico e aconchegante cercado pela natureza em Pomerode Fundos. Oferece suítes completas e espaço família com jardins, perfeito para vivenciar as tradições locais do Vale Europeu.",
         "address": {
           "@type": "PostalAddress",
@@ -139,7 +144,7 @@
         .hamburger { display: none; cursor: pointer; flex-direction: column; gap: 6px; }
         .hamburger span { width: 25px; height: 3px; background-color: var(--primary-color); border-radius: 2px; transition: var(--transition); }
         
-        #hero { margin-top: 90px; position: relative; min-height: calc(100vh - 90px); background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.80)), url('CAPA FUNDO LIMPA.png?v=8') center/cover no-repeat; display: flex; align-items: center; color: var(--bg-white); padding: 60px 0; }
+        #hero { margin-top: 90px; position: relative; min-height: calc(100vh - 90px); background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.80)), url('CAPA FUNDO LIMPA.png?v=9') center/cover no-repeat; display: flex; align-items: center; color: var(--bg-white); padding: 60px 0; }
         .hero-content { max-width: 700px; animation: fadeInUp 1s ease; }
         .hero-content h1 { color: var(--bg-white); font-size: 3.5rem; line-height: 1.2; margin-bottom: 24px; text-shadow: 0 2px 12px rgba(0,0,0,0.5); }
         .hero-content p { font-size: 1.2rem; margin-bottom: 16px; font-weight: 400; color: rgba(255, 255, 255, 0.95); text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
@@ -256,8 +261,6 @@
         .map-info-pane p { color: var(--text-light); font-size: 1.05rem; margin-bottom: 24px; }
         .map-address-box { background-color: var(--bg-white); border-left: 4px solid var(--primary-color); padding: 16px; border-radius: 0 8px 8px 0; font-size: 0.95rem; font-weight: 500; color: var(--text-dark); margin-bottom: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.02); }
         .map-iframe-container { width: 100%; height: 400px; border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-medium); position: relative; }
-        
-        /* IFRAME DO MAPA CORRIGIDO E ATUALIZADO */
         .map-iframe-container iframe { width: 100%; height: 100%; border: none; }
         
         footer { background-color: #1A2E21; color: rgba(255,255,255,0.8); padding: 80px 0 30px; }
@@ -302,8 +305,9 @@
     <header>
         <div class="container nav-container">
             <a href="#" class="logo">
-                <img src="CASA%20%26%20CABANA%20ANGILLYN%20TRANSPARENTE.png?v=8" alt="Casa & Cabana Angillyn" class="logo-img">
-                Casa & Cabana <span>Angillyn</span>
+                <!-- LOGO ATUALIZADO E DECODIFICADO COM A ENTIDADE HTML '&amp;' PARA LEITURA NATIVA -->
+                <img src="CASA &amp; CABANA ANGILLYN TRANSPARENTE.png?v=9" alt="Casa &amp; Cabana Angillyn" class="logo-img">
+                Casa &amp; Cabana <span>Angillyn</span>
             </a>
             <ul class="nav-menu">
                 <li><a href="#hero" class="nav-link active">Início</a></li>
@@ -325,7 +329,7 @@
     <section id="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Casa & Cabana Angillyn</h1>
+                <h1>Casa &amp; Cabana Angillyn</h1>
                 <p>A verdadeira imersão no turismo germânico, cercado pelo aconchego da natureza de Pomerode.</p>
                 <p class="sub">Desfrute desse refúgio preparado com atenção a cada detalhe. O balanço no jardim florido é o convite ideal para a família relaxar e colecionar momentos memoráveis no Vale Europeu.</p>
                 <a href="#hospedagens" class="btn">Conhecer as Acomodações</a>
@@ -357,13 +361,13 @@
                         </div>
                     </div>
                     <div class="sobre-img-container">
-                        <img src="Casa Angillyn - Suíte.jpg?v=8" alt="Área interna da Suíte na Casa Angillyn com cama Queen em Pomerode" loading="lazy">
+                        <img src="Casa Angillyn - Suíte.jpg?v=6" alt="Área interna da Suíte na Casa Angillyn com cama Queen em Pomerode" loading="lazy">
                     </div>
                 </div>
 
                 <div class="sobre-grid reverse">
                     <div class="sobre-img-container">
-                        <img src="Casa Angillyn - Espaço Família.jpg?v=8" alt="Visão ampla do jardim com balanço e infraestrutura do Espaço Família em Pomerode SC" loading="lazy">
+                        <img src="Casa Angillyn - Espaço Família.jpg?v=6" alt="Visão ampla do jardim com balanço e infraestrutura do Espaço Família em Pomerode SC" loading="lazy">
                     </div>
                     <div class="sobre-content">
                         <h3>Espaço Família</h3>
@@ -381,6 +385,7 @@
             </div>
         </section>
 
+        <!-- SEÇÃO FAQ (AI OVERVIEWS E RESPOSTAS DIRETAS - PILAR 1) -->
         <section id="perguntas-frequentes" class="section-padding" style="background-color: var(--bg-light);">
             <div class="container">
                 <div class="section-title">
@@ -388,7 +393,7 @@
                 </div>
                 <div class="faq-list">
                     <div class="faq-item">
-                        <div class="faq-question">Qual é a distância da Casa & Cabana Angillyn para o centro de Pomerode e atrações como a Rota Enxaimel?</div>
+                        <div class="faq-question">Qual é a distância da Casa &amp; Cabana Angillyn para o centro de Pomerode e atrações como a Rota Enxaimel?</div>
                         <div class="faq-answer">Estamos privilegiadamente localizados em Pomerode Fundos, a apenas 4 km de via asfaltada e tranquila até o coração do centro de Pomerode, facilitando o acesso rápido às festividades e principais rotas turísticas, ao mesmo tempo que mantém a imersão na natureza.</div>
                     </div>
                     <div class="faq-item">
@@ -413,22 +418,22 @@
                     <div class="card-hospedagem">
                         <div class="carousel-wrapper" id="carousel-familia-container">
                             <div class="carousel-track" id="track-familia">
-                                <div class="carousel-slide"><img src="ESPA%C3%87O%20FAM%C3%8DLIA%201.jpg?v=8" onerror="this.parentElement.remove();" alt="Decoração e área de convivência externa do Espaço Família"></div>
-                                <div class="carousel-slide"><img src="ESPA%C3%87O%20FAM%C3%8DLIA%202.jpeg?v=8" onerror="this.parentElement.remove();" alt="Jardim da hospedagem Casa Angillyn" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="ESPA%C3%87O%20FAM%C3%8DLIA%203.jpg?v=8" onerror="this.parentElement.remove();" alt="Interior do quarto Espaço Familia Pomerode" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="ESPA%C3%87O%20FAM%C3%8DLIA%204.jpeg?v=8" onerror="this.parentElement.remove();" alt="Detalhe acomodação Espaço Familia" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="ESPA%C3%87O%20FAM%C3%8DLIA%205.jpeg?v=8" onerror="this.parentElement.remove();" alt="Cozinha estruturada Espaço Familia" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="ESPA%C3%87O%20FAM%C3%8DLIA%206.jpeg?v=8" onerror="this.parentElement.remove();" alt="Espaço Família Foto 6" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="ESPA%C3%87O%20FAM%C3%8DLIA%207.jpg?v=8" onerror="this.parentElement.remove();" alt="Espaço Família Foto 7" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="ESPA%C3%87O%20FAM%C3%8DLIA%208.jpeg?v=8" onerror="this.parentElement.remove();" alt="Espaço Família Foto 8" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="ESPA%C3%87O%20FAM%C3%8DLIA%209.jpeg?v=8" onerror="this.parentElement.remove();" alt="Espaço Família Foto 9" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="ESPA%C3%87O%20FAM%C3%8DLIA%2010.jpg?v=8" onerror="this.parentElement.remove();" alt="Espaço Família Foto 10" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="ESPA%C3%87O%20FAM%C3%8DLIA%2011.jpeg?v=8" onerror="this.parentElement.remove();" alt="Espaço Família Foto 11" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="ESPA%C3%87O%20FAM%C3%8DLIA%2012.jpeg?v=8" onerror="this.parentElement.remove();" alt="Espaço Família Foto 12" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="ESPA%C3%87O%20FAM%C3%8DLIA%2013.jpeg?v=8" onerror="this.parentElement.remove();" alt="Espaço Família Foto 13" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="ESPA%C3%87O%20FAM%C3%8DLIA%2014.jpeg?v=8" onerror="this.parentElement.remove();" alt="Espaço Família Foto 14" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="ESPA%C3%87O%20FAM%C3%8DLIA%2016.jpg?v=8" onerror="this.parentElement.remove();" alt="Espaço Família Foto 16" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="ESPA%C3%87O%20FAM%C3%8DLIA%2017.jpg?v=8" onerror="this.parentElement.remove();" alt="Espaço Família Foto 17" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="ESPAÇO FAMÍLIA 1.jpg?v=6" onerror="this.parentElement.remove();" alt="Decoração e área de convivência externa do Espaço Família"></div>
+                                <div class="carousel-slide"><img src="ESPAÇO FAMÍLIA 2.jpeg?v=6" onerror="this.parentElement.remove();" alt="Jardim da hospedagem Casa Angillyn" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="ESPAÇO FAMÍLIA 3.jpg?v=6" onerror="this.parentElement.remove();" alt="Interior do quarto Espaço Familia Pomerode" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="ESPAÇO FAMÍLIA 4.jpeg?v=6" onerror="this.parentElement.remove();" alt="Detalhe acomodação Espaço Familia" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="ESPAÇO FAMÍLIA 5.jpeg?v=6" onerror="this.parentElement.remove();" alt="Cozinha estruturada Espaço Familia" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="ESPAÇO FAMÍLIA 6.jpeg?v=6" onerror="this.parentElement.remove();" alt="Espaço Família Foto 6" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="ESPAÇO FAMÍLIA 7.jpg?v=6" onerror="this.parentElement.remove();" alt="Espaço Família Foto 7" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="ESPAÇO FAMÍLIA 8.jpeg?v=6" onerror="this.parentElement.remove();" alt="Espaço Família Foto 8" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="ESPAÇO FAMÍLIA 9.jpeg?v=6" onerror="this.parentElement.remove();" alt="Espaço Família Foto 9" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="ESPAÇO FAMÍLIA 10.jpg?v=6" onerror="this.parentElement.remove();" alt="Espaço Família Foto 10" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="ESPAÇO FAMÍLIA 11.jpeg?v=6" onerror="this.parentElement.remove();" alt="Espaço Família Foto 11" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="ESPAÇO FAMÍLIA 12.jpeg?v=6" onerror="this.parentElement.remove();" alt="Espaço Família Foto 12" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="ESPAÇO FAMÍLIA 13.jpeg?v=6" onerror="this.parentElement.remove();" alt="Espaço Família Foto 13" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="ESPAÇO FAMÍLIA 14.jpeg?v=6" onerror="this.parentElement.remove();" alt="Espaço Família Foto 14" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="ESPAÇO FAMÍLIA 16.jpg?v=6" onerror="this.parentElement.remove();" alt="Espaço Família Foto 16" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="ESPAÇO FAMÍLIA 17.jpg?v=6" onerror="this.parentElement.remove();" alt="Espaço Família Foto 17" loading="lazy"></div>
                             </div>
                             <button class="carousel-arrow left-arrow" aria-label="Slide anterior" onclick="changeSlide('familia', -1)">❮</button>
                             <button class="carousel-arrow right-arrow" aria-label="Próximo slide" onclick="changeSlide('familia', 1)">❯</button>
@@ -444,18 +449,18 @@
                     <div class="card-hospedagem">
                         <div class="carousel-wrapper" id="carousel-cabana-container">
                             <div class="carousel-track" id="track-cabana">
-                                <div class="carousel-slide"><img src="CASA%20ANGILILLYN%20-%20SUITE%201.jpg?v=8" onerror="this.parentElement.remove();" alt="Vista confortável do quarto da Cabana Aconchegante Angillyn"></div>
-                                <div class="carousel-slide"><img src="CASA%20ANGILILLYN%20-%20SUITE%202.jpg?v=8" onerror="this.parentElement.remove();" alt="Configuração de móveis da Suíte Angillyn" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="CASA%20ANGILILLYN%20-%20SUITE%203.jpg?v=8" onerror="this.parentElement.remove();" alt="Equipamentos da Suíte em Pomerode" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="CASA%20ANGILILLYN%20-%20SUITE%204.jpeg?v=8" onerror="this.parentElement.remove();" alt="Estrutura de cozinha compacta Suíte Angillyn" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="CASA%20ANGILILLYN%20-%20SUITE%205.jpeg?v=8" onerror="this.parentElement.remove();" alt="Banheiro reformado Suíte" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="CASA%20ANGILILLYN%20-%20SUITE%206.jpg?v=8" onerror="this.parentElement.remove();" alt="Vista da Janela Cabana Angillyn" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="CASA%20ANGILILLYN%20-%20SUITE%207.jpg?v=8" onerror="this.parentElement.remove();" alt="Cabana Angillyn Foto 7" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="CASA%20ANGILILLYN%20-%20SUITE%208.jpeg?v=8" onerror="this.parentElement.remove();" alt="Cabana Angillyn Foto 8" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="CASA%20ANGILILLYN%20-%20SUITE%209.jpg?v=8" onerror="this.parentElement.remove();" alt="Cabana Angillyn Foto 9" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="CASA%20ANGILILLYN%20-%20SUITE%2010.jpeg?v=8" onerror="this.parentElement.remove();" alt="Cabana Angillyn Foto 10" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="CASA%20ANGILILLYN%20-%20SUITE%2011.jpeg?v=8" onerror="this.parentElement.remove();" alt="Cabana Angillyn Foto 11" loading="lazy"></div>
-                                <div class="carousel-slide"><img src="CASA%20ANGILILLYN%20-%20SUITE%2012.jpeg?v=8" onerror="this.parentElement.remove();" alt="Cabana Angillyn Foto 12" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="CASA ANGILILLYN - SUITE 1.jpg?v=6" onerror="this.parentElement.remove();" alt="Vista confortável do quarto da Cabana Aconchegante Angillyn"></div>
+                                <div class="carousel-slide"><img src="CASA ANGILILLYN - SUITE 2.jpg?v=6" onerror="this.parentElement.remove();" alt="Configuração de móveis da Suíte Angillyn" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="CASA ANGILILLYN - SUITE 3.jpg?v=6" onerror="this.parentElement.remove();" alt="Equipamentos da Suíte em Pomerode" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="CASA ANGILILLYN - SUITE 4.jpeg?v=6" onerror="this.parentElement.remove();" alt="Estrutura de cozinha compacta Suíte Angillyn" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="CASA ANGILILLYN - SUITE 5.jpeg?v=6" onerror="this.parentElement.remove();" alt="Banheiro reformado Suíte" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="CASA ANGILILLYN - SUITE 6.jpg?v=6" onerror="this.parentElement.remove();" alt="Vista da Janela Cabana Angillyn" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="CASA ANGILILLYN - SUITE 7.jpg?v=6" onerror="this.parentElement.remove();" alt="Cabana Angillyn Foto 7" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="CASA ANGILILLYN - SUITE 8.jpeg?v=6" onerror="this.parentElement.remove();" alt="Cabana Angillyn Foto 8" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="CASA ANGILILLYN - SUITE 9.jpg?v=6" onerror="this.parentElement.remove();" alt="Cabana Angillyn Foto 9" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="CASA ANGILILLYN - SUITE 10.jpeg?v=6" onerror="this.parentElement.remove();" alt="Cabana Angillyn Foto 10" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="CASA ANGILILLYN - SUITE 11.jpeg?v=6" onerror="this.parentElement.remove();" alt="Cabana Angillyn Foto 11" loading="lazy"></div>
+                                <div class="carousel-slide"><img src="CASA ANGILILLYN - SUITE 12.jpeg?v=6" onerror="this.parentElement.remove();" alt="Cabana Angillyn Foto 12" loading="lazy"></div>
                             </div>
                             <button class="carousel-arrow left-arrow" aria-label="Slide anterior" onclick="changeSlide('cabana', -1)">❮</button>
                             <button class="carousel-arrow right-arrow" aria-label="Próximo slide" onclick="changeSlide('cabana', 1)">❯</button>
@@ -549,7 +554,7 @@
                     <h2>Comodidades de Repouso e Lazer</h2>
                 </div>
                 <div class="amenities-grid">
-                    <div class="amenity-card"><svg class="amenity-icon" viewBox="0 0 24 24"><path d="M18 3H6c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 7h-2V8h2v2zm-4-2h2v2h-2V8zm-4 4h2v2H7v-2zm4 2h2v2h-2v2zm4-2h2v2h-2v-2zm-8-4h2v2H7V8zm0 8h10v2H7v-2z"/></svg><span>Arquitetura de Cozinha Montada</span></div>
+                    <div class="amenity-card"><svg class="amenity-icon" viewBox="0 0 24 24"><path d="M18 3H6c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 7h-2V8h2v2zm-4-2h2v2h-2V8zm-4 4h2v2H7v-2zm4 2h2v-2h-2v2zm4-2h2v2h-2v-2zm-8-4h2v2H7V8zm0 8h10v2H7v-2z"/></svg><span>Arquitetura de Cozinha Montada</span></div>
                     <div class="amenity-card"><svg class="amenity-icon" viewBox="0 0 24 24"><path d="M12.01 21.49L23.64 7c-.45-.34-4.93-4-11.64-4C5.28 3 .81 6.66.36 7l11.63 14.49.01.01.01-.01z"/></svg><span>Banda Larga Estável Integrada</span></div>
                     <div class="amenity-card"><svg class="amenity-icon" viewBox="0 0 24 24"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1-1.5 1zm11 0c-.83 0-1.5-.67-1.5-1s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1-1.5 1zM5 11l1.27-3.82c.14-.4.52-.68.96-.68h9.54c.44 0 .82.28.96.68L19 11H5z"/></svg><span>Estacionamento Privado Base</span></div>
                     <div class="amenity-card"><svg class="amenity-icon" viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.9-.9 1.9-2V5c0-1.1-.9-2-1.9-2zm0 14H3V5h18v12z"/></svg><span>Tela Inteligente (Smart TV)</span></div>
@@ -584,12 +589,14 @@
             </div>
         </section>
 
+        <!-- SEÇÃO ANFITRIÃO ELEVADA PARA PROVAR E-E-A-T LOCAL (Pilar 2) -->
         <section id="anfitriao" class="section-padding" style="background-color: var(--bg-white);">
             <div class="container">
                 <div class="anfitriao-card">
                     <div class="anfitriao-left">
                         <div class="avatar-box">
-                            <img src="CASA%20%26%20CABANA%20ANGILLYN%20TRANSPARENTE.png?v=8" alt="Logo de curadoria Casa & Cabana Angillyn" style="width:100%; height:100%; border-radius:50%; object-fit:cover; display:none;" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" loading="lazy">
+                            <!-- Alt tag para reconhecimento de entidade autoral -->
+                            <img src="CASA &amp; CABANA ANGILLYN TRANSPARENTE.png?v=9" alt="Logo de curadoria Casa &amp; Cabana Angillyn" style="width:100%; height:100%; border-radius:50%; object-fit:cover; display:none;" onload="this.style.display='block'; this.nextElementSibling.style.display='none';" loading="lazy">
                             <div class="avatar-placeholder">AR</div>
                             <span class="badge-superhost">Superhost</span>
                         </div>
@@ -602,12 +609,12 @@
                         </div>
                     </div>
                     <div class="anfitriao-right">
-                        <h3>A Expertise por Trás da Casa & Cabana Angillyn</h3>
+                        <h3>A Expertise por Trás da Casa &amp; Cabana Angillyn</h3>
                         <ul class="anfitriao-meta-list">
                             <li><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg> Fluência no acolhimento bilíngue (Alemão/Português)</li>
                             <li><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg> Base operacional ativa em Pomerode, SC</li>
                         </ul>
-                        <p class="anfitriao-bio">O E-E-A-T do Google valida a experiência viva e concreta. Nascida e criada entre os vales catarinenses, minha arquitetura de hospedagem é moldada pelo entendimento profundo do pólo turístico do Vale Europeu. Receber visitantes na Casa & Cabana Angillyn não é apenas ceder chaves, mas conduzir a uma logística de descanso com qualidade impecável e orientações sobre a verdadeira gastronomia, o museu Carl Weege e a tradição enxaimel original das nossas raízes pomeranas.</p>
+                        <p class="anfitriao-bio">O E-E-A-T do Google valida a experiência viva e concreta. Nascida e criada entre os vales catarinenses, minha arquitetura de hospedagem é moldada pelo entendimento profundo do pólo turístico do Vale Europeu. Receber visitantes na Casa &amp; Cabana Angillyn não é apenas ceder chaves, mas conduzir a uma logística de descanso com qualidade impecável e orientações sobre a verdadeira gastronomia, o museu Carl Weege e a tradição enxaimel original das nossas raízes pomeranas.</p>
                         
                         <div class="superhost-expl">
                             <strong>A Certificação Global Superhost</strong><br>
@@ -653,7 +660,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-info">
-                    <h3 style="color: white; font-size: 1.5rem; margin-bottom: 20px;">Casa & Cabana Angillyn</h3>
+                    <h3 style="color: white; font-size: 1.5rem; margin-bottom: 20px;">Casa &amp; Cabana Angillyn</h3>
                     <p>Referência baseada em arquitetura de conforto térmico e natural na base turística do sul global: Pomerode, SC.</p>
                 </div>
                 <div class="footer-links">
@@ -689,7 +696,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 Casa & Cabana Angillyn. Execução de Integridade Garantida.</p>
+                <p>© 2026 Casa &amp; Cabana Angillyn. Execução de Integridade Garantida.</p>
                 <p>Nó Raiz: <a href="https://www.casaecabanaangillym.com.br" target="_blank" style="color:rgba(255,255,255,0.6)">www.casaecabanaangillym.com.br</a></p>
             </div>
         </div>
